@@ -1,23 +1,59 @@
-# Project XYZ
+# hackthon1 Retail Sales Data Analysis
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+**hackthon1 Retail Sales Data Analysis** is aim to analyze historical retail sales data along with store, promotional, and economic information to uncover patterns, identify key sales drivers, and generate actionable insights that can improve revenue forecasting, optimize promotions, and enhance inventory management.
+
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+* Dataset used in this anaylsis is the historical sales data for 45 stores located in different regions - each store contains a number of departments. The company also runs several promotional markdown events throughout the year. These markdowns precede prominent holidays, the four largest of which are the Super Bowl, Labor Day, Thanksgiving, and Christmas. The weeks including these holidays are weighted five times higher in the evaluation than non-holiday weeks.
+
+* There are 3 datasets – Stores, Features and Sales. For more details please visit https://www.kaggle.com/datasets/manjeetsingh/retaildataset
 
 
 ## Business Requirements
-* Describe your business requirements
+* Sales Performance Analysis
+
+    * Compare performance across stores, departments to identify top- and low-performing stores/departments.
+
+* Promotion Effectiveness
+
+    * Measure the impact of markdowns, holidays, and seasonal promotions on weekly sales and recommend optimal promotion strategies.
+
+
+* Seasonality & Trend Detection
+
+    * Identify sales patterns by week, month, quarter, and year to determine holiday season trends.
+
+* Operational Planning
+
+    * Support inventory and staffing decisions with accurate demand insights.
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+1. Weekly sales are significantly higher during holidays.
+    * Answer:
+2. Promotions/markdowns positively impact sales, especially in peak seasons.
+    * Answer:
+3. Larger stores generate higher sales.
+    * Answer:
+4. Economic factors (fuel price, CPI, unemployment) influence sales.
+    * Answer:
+5. Sales follow seasonal patterns with specific quarterly/monthly peaks.
+    * Answer:
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
+* 1.  ETL
+    * Data Extraction
+    * Data Transformation
+    * Data Load
+2. Data Visualization
+    * Matplotlib
+    * Seaborn
+    * plotly
+3. Data Analysis and Findings
+
 * How was the data managed throughout the collection, processing, analysis and interpretation steps?
 * Why did you choose the research methodologies you used?
 
@@ -31,8 +67,17 @@
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+Although there were no data privacy (PII), bias, or fairness issues with the dataset, the following principles were always followed:
+
+* Data Privacy: Any personally identifiable information (PII) was anonymized or removed to protect individual privacy.
+
+* Bias and Fairness: The dataset was reviewed for representation bias, and adjustments were made to prevent disadvantaging any group.
+
+* Legal Compliance: Data collection and processing adhered to all applicable regulations (e.g., GDPR, HIPAA).
+
+* Societal Impact: Potential misuse or negative consequences were considered, and safeguards were implemented to mitigate risks.
+
+source: ChatGPT
 
 
 ## Unfixed Bugs
@@ -43,6 +88,7 @@
 ## Development Roadmap
 * What challenges did you face, and what strategies were used to overcome these challenges?
 * What new skills or tools do you plan to learn next based on your project experience? 
+    *  Regarding the demand forecasting, it is essential to  develop models to predict future sales using historical data and external features (temperature, fuel prices, CPI, unemployment, etc.). Further ML techniques for forecasting are to be developed.
 
 
 ## Main Data Analysis Libraries
@@ -68,4 +114,5 @@
 
 
 ## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+* ## Acknowledgements
+* Special thanks to the course masters, Mark and Neil, the facilitators, Vasi and Roman, and all the fellow classmates for the support and inspiration through the journey of learning.
